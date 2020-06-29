@@ -12,6 +12,7 @@
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
                     <Color x:Key="NavPaneBackgroundColor">#1F1F1F</Color>
+                    <SolidColorBrush x:Key="ToMessageBackgroundBrush" Color="#ececec" />
                     <SolidColorBrush x:Key="HeaderBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Light">
@@ -19,6 +20,8 @@
                     <SolidColorBrush x:Key="HeaderBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
+            <SolidColorBrush x:Key="SystemControlHighlightAltBaseHighBrush" Color="White" />
+            <SolidColorBrush x:Key="SystemControlHighlightListAccentLowBrush" Color="#3671e7" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

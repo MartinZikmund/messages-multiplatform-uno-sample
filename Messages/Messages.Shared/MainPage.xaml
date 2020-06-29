@@ -19,6 +19,11 @@
             <SplitView.Pane>
                 <Grid Padding="12">
                     <ListView ItemsSource="{x:Bind ViewModel.Conversations}" SelectedItem="{x:Bind ViewModel.SelectedConversation, Mode=TwoWay}">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="viewmodels:ConversationViewModel">
                                 <Grid Padding="8" RowSpacing="8" ColumnSpacing="8">
@@ -28,13 +33,13 @@
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
                                         <RowDefinition Height="*" />
                                     </Grid.RowDefinitions>
                                     <Image Source="/Assets/user.png" Grid.RowSpan="2" />
-                                    <TextBlock Text="{x:Bind Name}" FontSize="16" FontWeight="Bold" Grid.Column="1" />
-                                    <TextBlock Text="{x:Bind LastMessage, Mode=OneWay}" FontSize="16" Grid.Row="1" Grid.Column="1" TextTrimming="CharacterEllipsis" />
-                                    <TextBlock Text="9:41" FontSize="16" Grid.Column="2" />
+                                    <TextBlock Text="{x:Bind Name}" FontSize="15" FontWeight="Bold" Grid.Column="1" VerticalAlignment="Center" />
+                                    <TextBlock Text="{x:Bind LastMessage, Mode=OneWay}" FontSize="15" Grid.Row="1" Grid.Column="1" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                                    <TextBlock Text="9:41" FontSize="15" Grid.Column="2" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -53,8 +58,9 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Image Source="/Assets/menu.png" Width="32" Tapped="PaneToggle" />
-                        
+                        <Border PointerReleased="PaneToggle" Background="Transparent">
+                        <Image Source="/Assets/menu.png" Width="32" />
+                        </Border>
                         <TextBlock TextLineBounds="Tight" HorizontalAlignment="center" VerticalAlignment="Center" Grid.Column="1" Text="Messages" FontSize="24" FontWeight="Bold" />
                     </Grid>
                     <Grid Grid.Row="1" Padding="12,20,12,20">
@@ -62,7 +68,6 @@
                             <ListView.ItemContainerStyle>
                                 <Style TargetType="ListViewItem">
                                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                                    <Setter Property="CornerRadius" Value="20" />
                                 </Style>
                             </ListView.ItemContainerStyle>
                         </ListView>

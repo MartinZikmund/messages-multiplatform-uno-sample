@@ -3,6 +3,7 @@ using Messages.Shared.ViewModels;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 
 namespace Messages
 {
@@ -15,6 +16,6 @@ namespace Messages
 
         public MainViewModel ViewModel { get; } = new MainViewModel();
 
-        private void PaneToggle(object sender, RoutedEventArgs e) => Split.IsPaneOpen = !Split.IsPaneOpen;
+        private void PaneToggle(object sender, PointerRoutedEventArgs e) => Split.IsPaneOpen = !Split.IsPaneOpen;
     }
 }

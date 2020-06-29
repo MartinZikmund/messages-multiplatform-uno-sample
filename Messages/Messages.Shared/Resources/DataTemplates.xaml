@@ -3,17 +3,27 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Messages.Shared.Resources" xmlns:viewmodels="using:Messages.Shared.ViewModels">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ToMessageBackgroundBrush" Color="#333333" />
+            <SolidColorBrush x:Key="ToMessageForegroundBrush" Color="White" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ToMessageBackgroundBrush" Color="#ececec" />
+            <SolidColorBrush x:Key="ToMessageForegroundBrush" Color="Black" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
     <DataTemplate x:Key="FromMessageTemplate">
         <Grid>
-            <Border CornerRadius="12" Padding="12" HorizontalAlignment="Right" Margin="16,8,0,8" Background="#317bfa">
+            <Border CornerRadius="12" Padding="12" HorizontalAlignment="Right" Margin="16,8,0,8" Background="#3671e7">
                 <TextBlock Text="{Binding Text}" TextWrapping="WrapWholeWords" Foreground="White" />
             </Border>
         </Grid>
     </DataTemplate>
     <DataTemplate x:Key="ToMessageTemplate">
         <Grid>
-            <Border CornerRadius="12" Padding="12" HorizontalAlignment="Left" Margin="0,8,16,8" Background="#ececec">
-                <TextBlock Text="{Binding Text}" TextWrapping="WrapWholeWords" Foreground="Black" />
+            <Border CornerRadius="12" Padding="12" HorizontalAlignment="Left" Margin="0,8,16,8" Background="{ThemeResource ToMessageBackgroundBrush}">
+                <TextBlock Text="{Binding Text}" TextWrapping="WrapWholeWords" Foreground="{ThemeResource ToMessageForegroundBrush}" />
             </Border>
         </Grid>
     </DataTemplate>

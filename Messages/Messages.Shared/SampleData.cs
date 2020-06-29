@@ -32,17 +32,7 @@ namespace Messages.Shared
                     Name = "Francois Tanguay",
                     Messages = new ObservableCollection<MessageViewModel>()
                     {
-                        MessageViewModel.CreateTo("Here's to the crazy ones"),
-                        MessageViewModel.CreateFrom("the misfits, the rebels, the troublemakers"),
-                        MessageViewModel.CreateTo("the round pegs in the square holes..."),
-                        MessageViewModel.CreateFrom("the ones who see things differently – they're not fond of rules..."),
-                        MessageViewModel.CreateTo("You can quote them, disagree with them, glorify or vilify them"),
-                        MessageViewModel.CreateFrom("but the only thing you can't do is ignore them because they change things..."),
-                        MessageViewModel.CreateTo("they push the human race forward"),
-                        MessageViewModel.CreateFrom("and while some may see them as the crazy ones"),
-                        MessageViewModel.CreateTo("we see genius"),
-                        MessageViewModel.CreateFrom("because the people who are crazy enough to think that they can change the world"),
-                        MessageViewModel.CreateTo("are the ones who do."),
+                        MessageViewModel.CreateTo("About Uno Platform"),
                     }
                 },
                 new ConversationViewModel()
@@ -50,17 +40,7 @@ namespace Messages.Shared
                     Name = "David John Oliver",
                     Messages = new ObservableCollection<MessageViewModel>()
                     {
-                        MessageViewModel.CreateTo("Here's to the crazy ones"),
-                        MessageViewModel.CreateFrom("the misfits, the rebels, the troublemakers"),
-                        MessageViewModel.CreateTo("the round pegs in the square holes..."),
-                        MessageViewModel.CreateFrom("the ones who see things differently – they're not fond of rules..."),
-                        MessageViewModel.CreateTo("You can quote them, disagree with them, glorify or vilify them"),
-                        MessageViewModel.CreateFrom("but the only thing you can't do is ignore them because they change things..."),
-                        MessageViewModel.CreateTo("they push the human race forward"),
-                        MessageViewModel.CreateFrom("and while some may see them as the crazy ones"),
-                        MessageViewModel.CreateTo("we see genius"),
-                        MessageViewModel.CreateFrom("because the people who are crazy enough to think that they can change the world"),
-                        MessageViewModel.CreateTo("are the ones who do."),
+                        MessageViewModel.CreateTo("unoMessage"),
                     }
                 },
                 new ConversationViewModel()
@@ -68,17 +48,7 @@ namespace Messages.Shared
                     Name = "Carl de Billy",
                     Messages = new ObservableCollection<MessageViewModel>()
                     {
-                        MessageViewModel.CreateTo("Here's to the crazy ones"),
-                        MessageViewModel.CreateFrom("the misfits, the rebels, the troublemakers"),
-                        MessageViewModel.CreateTo("the round pegs in the square holes..."),
-                        MessageViewModel.CreateFrom("the ones who see things differently – they're not fond of rules..."),
-                        MessageViewModel.CreateTo("You can quote them, disagree with them, glorify or vilify them"),
-                        MessageViewModel.CreateFrom("but the only thing you can't do is ignore them because they change things..."),
-                        MessageViewModel.CreateTo("they push the human race forward"),
-                        MessageViewModel.CreateFrom("and while some may see them as the crazy ones"),
-                        MessageViewModel.CreateTo("we see genius"),
-                        MessageViewModel.CreateFrom("because the people who are crazy enough to think that they can change the world"),
-                        MessageViewModel.CreateTo("are the ones who do."),
+                        MessageViewModel.CreateTo("Single codebase"),
                     }
                 },
                 new ConversationViewModel()
@@ -86,17 +56,7 @@ namespace Messages.Shared
                     Name = "David R.",
                     Messages = new ObservableCollection<MessageViewModel>()
                     {
-                        MessageViewModel.CreateTo("Here's to the crazy ones"),
-                        MessageViewModel.CreateFrom("the misfits, the rebels, the troublemakers"),
-                        MessageViewModel.CreateTo("the round pegs in the square holes..."),
-                        MessageViewModel.CreateFrom("the ones who see things differently – they're not fond of rules..."),
-                        MessageViewModel.CreateTo("You can quote them, disagree with them, glorify or vilify them"),
-                        MessageViewModel.CreateFrom("but the only thing you can't do is ignore them because they change things..."),
-                        MessageViewModel.CreateTo("they push the human race forward"),
-                        MessageViewModel.CreateFrom("and while some may see them as the crazy ones"),
-                        MessageViewModel.CreateTo("we see genius"),
-                        MessageViewModel.CreateFrom("because the people who are crazy enough to think that they can change the world"),
-                        MessageViewModel.CreateTo("are the ones who do."),
+                        MessageViewModel.CreateTo("All platforms"),
                     }
                 },
                 new ConversationViewModel()
@@ -104,17 +64,7 @@ namespace Messages.Shared
                     Name = "Mathieu Fillion",
                     Messages = new ObservableCollection<MessageViewModel>()
                     {
-                        MessageViewModel.CreateTo("Here's to the crazy ones"),
-                        MessageViewModel.CreateFrom("the misfits, the rebels, the troublemakers"),
-                        MessageViewModel.CreateTo("the round pegs in the square holes..."),
-                        MessageViewModel.CreateFrom("the ones who see things differently – they're not fond of rules..."),
-                        MessageViewModel.CreateTo("You can quote them, disagree with them, glorify or vilify them"),
-                        MessageViewModel.CreateFrom("but the only thing you can't do is ignore them because they change things..."),
-                        MessageViewModel.CreateTo("they push the human race forward"),
-                        MessageViewModel.CreateFrom("and while some may see them as the crazy ones"),
-                        MessageViewModel.CreateTo("we see genius"),
-                        MessageViewModel.CreateFrom("because the people who are crazy enough to think that they can change the world"),
-                        MessageViewModel.CreateTo("are the ones who do."),
+                        MessageViewModel.CreateTo("Including the web"),
                     }
                 }
             };
