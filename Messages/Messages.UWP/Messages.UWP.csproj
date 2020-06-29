@@ -19,6 +19,9 @@
     <PackageReference Include="Uno.Microsoft.Toolkit.Uwp.UI.Controls">
       <Version>6.1.0-build.178.gc768b0f669</Version>
     </PackageReference>
+    <PackageReference Include="Uno.UI">
+      <Version>3.0.0-dev.646</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
