@@ -7,16 +7,16 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <resources:DataTemplates />
+                <ResourceDictionary Source="/Resources/DataTemplates.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <Color x:Key="NavPaneBackgroundColor">#0F0F0F</Color>
-                    <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
+                    <Color x:Key="NavPaneBackgroundColor">#1F1F1F</Color>
+                    <SolidColorBrush x:Key="HeaderBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Light">
-                    <Color x:Key="NavPaneBackgroundColor">#F1F1F1</Color>
-                    <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
+                    <Color x:Key="NavPaneBackgroundColor">#f3f2f7</Color>
+                    <SolidColorBrush x:Key="HeaderBackgroundThemeBrush" Color="{ThemeResource NavPaneBackgroundColor}" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
